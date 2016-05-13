@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/wei_jieshao_zhaopian"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+            <!--android:src="@mipmap/caocao"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/wei_jieshao_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#000"
+                    android:textSize="35sp" />
+                <!--android:text="曹    操"-->
+
+                <TextView
+                    android:id="@+id/wei_jieshao_biaozi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:paddingTop="20dp"
+                    android:textColor="#000"
+                    android:textSize="25sp" />
+                <!--android:text="字    孟德"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/wei_jieshao_zhiye"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+                <!--android:text="魏武帝，庙号太祖"-->
+
+                <TextView
+                    android:id="@+id/wei_jieshao_shengri"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+                <!--android:text="（241年11月15日－260年6月2日）"-->
+
+                <TextView
+                    android:id="@+id/wei_jieshao_zuji"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+                <!--android:text="沛国谯县（今安徽亳州）人"-->
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wei_jieshao_jianjie"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:textColor="#777"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:layout_marginBottom="10dp"/>
+            <!--android:text="\t\t东汉末年杰出的政治家、军事家、文学家、书法家，三国中曹魏政权的奠基人。\n\t\t东汉末年，天下大乱，曹操以汉天子的名义征讨四方，对内消灭二袁、吕布、刘表、马超、韩遂等割据势力对外降服南匈奴、乌桓、鲜卑等，统一了中国北方，并实行一系列政策恢复经济生产和社会秩序，奠定了曹魏立国的基础。\n\t\t曹操在世时，担任东汉丞相，后为魏王，去世后谥号为武王。-->
+            <!--曹操精兵法，善诗歌，抒发自己的政治抱负，并反映汉末人民的苦难生活，气魄雄伟，慷慨悲凉；散文亦清峻整洁，开启并繁荣了建安文学，给后人留下了宝贵的精神财富，史称建安风骨，鲁迅评价其为“改造文章的祖师”。同时曹操也擅长书法，尤工章草，唐朝张怀瓘在《书断》中评其为“妙品”。"/>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

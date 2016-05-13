@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/home_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/home_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/home"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/button_color"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/home_data"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/datas"
+            android:gravity="center"
+            android:text="资料"
+            android:textColor="@drawable/button_color"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/home_forum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/forum"
+            android:gravity="center"
+            android:text="论坛"
+            android:textColor="@drawable/button_color"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/home_game"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/game"
+            android:gravity="center"
+            android:text="游戏"
+            android:textColor="@drawable/button_color"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/home_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/my"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/button_color"
+            android:textSize="13sp" />
+    </RadioGroup>
+
+</LinearLayout>
