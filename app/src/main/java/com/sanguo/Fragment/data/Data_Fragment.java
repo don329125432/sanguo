@@ -4,12 +4,22 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.sanguo.Adapter.MyFragment;
+import com.sanguo.Fragment.data.wujiang.qun.Wujiang_qun_Fragment;
+import com.sanguo.Fragment.data.wujiang.shu.Wujiang_shu_Fragment;
+import com.sanguo.Fragment.data.wujiang.wei.Wujiang_wei_Fragment;
+import com.sanguo.Fragment.data.wujiang.wu.Wujiang_wu_Fragment;
 import com.sanguo.R;
+import com.viewpagerindicator.TabPageIndicator;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by jinrong on 2016/3/25.
@@ -19,6 +29,8 @@ public class Data_Fragment extends Fragment implements View.OnClickListener {
     private ImageView mData_zhanyi;
     private ImageView mData_ziliao;
     private FragmentManager supportFragmentManager;
+    private TabPageIndicator mTpi;
+    private ViewPager mViewPager;
 
     @Nullable
     @Override

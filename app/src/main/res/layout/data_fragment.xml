@@ -2,58 +2,57 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#eee">
+    android:background="#eee"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
 
     <ImageView
-        android:id="@+id/data_wujiang"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="8"
-        android:src="@mipmap/lvbu"
-        android:layout_margin="10dp"
-        android:background="@drawable/yuanjiao"
-        android:scaleType="fitXY"/>
+    android:id="@+id/data_wujiang"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8"
+    android:src="@mipmap/lvbu"
+    android:layout_margin="10dp"
+    android:background="@drawable/yuanjiao"
+    android:scaleType="fitXY"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
 
     <ImageView
-        android:id="@+id/data_zhanyi"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="8"
-        android:src="@mipmap/chibi"
-        android:layout_margin="10dp"
-        android:background="@drawable/yuanjiao"
-        android:scaleType="fitXY"/>
+    android:id="@+id/data_zhanyi"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8"
+    android:src="@mipmap/chibi"
+    android:layout_margin="10dp"
+    android:background="@drawable/yuanjiao"
+    android:scaleType="fitXY"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
 
     <ImageView
-        android:id="@+id/data_ziliao"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="8"
-        android:src="@mipmap/ziliao"
-        android:layout_margin="10dp"
-        android:background="@drawable/yuanjiao"
-        android:scaleType="fitXY"/>
+    android:id="@+id/data_ziliao"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8"
+    android:src="@mipmap/ziliao"
+    android:layout_margin="10dp"
+    android:background="@drawable/yuanjiao"
+    android:scaleType="fitXY"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
-
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
 
 </LinearLayout>
