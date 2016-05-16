@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.sanguo.R;
 
@@ -23,5 +24,7 @@ public class Wujiang_qun_Fragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        Toast.makeText(getContext(),"wei",Toast.LENGTH_SHORT).show();
     }
 }

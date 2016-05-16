@@ -1,4 +1,4 @@
-package com.sanguo.Fragment.data.wujiang.wei;
+package com.sanguo.Fragment.data.wujiang;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * Created by jinrong on 2016/4/21.
  */
-public class wei_wujiang_xiangxi extends Activity {
+public class Wujiang_xiangxi extends Activity {
     private ImageView mWei_jieshao_zhaopian;
     private TextView mWei_jieshao_name;
     private TextView mWei_jieshao_biaozi;

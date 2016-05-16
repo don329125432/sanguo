@@ -10,7 +10,9 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
+import com.sanguo.Fragment.data.wujiang.Wujiang_xiangxi;
 import com.sanguo.R;
 
 import java.util.ArrayList;
@@ -55,6 +57,8 @@ public class Wujiang_wei_Fragment extends Fragment {
     @Override
     public void onViewCreated(View view, final Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        Toast.makeText(getContext(),"wei",Toast.LENGTH_SHORT).show();
 
         caocao = new HashMap<String, Object>();
         caocao.put("name", "曹      操");
@@ -277,7 +281,7 @@ public class Wujiang_wei_Fragment extends Fragment {
 
                 //Toast.makeText(getContext(), bundle + "被点击了" + position, Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(getActivity(), wei_wujiang_xiangxi.class);
+                Intent intent = new Intent(getActivity(), Wujiang_xiangxi.class);
 
                 intent.putExtras(bundle);
 

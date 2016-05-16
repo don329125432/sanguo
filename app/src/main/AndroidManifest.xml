@@ -20,7 +20,7 @@
         </activity>
         <activity android:name=".Activity.HomeActivity"/>
         <activity android:name=".Activity.WebView_Activity"/>
-        <activity android:name=".Fragment.data.wujiang.wei.wei_wujiang_xiangxi"/>
+        <activity android:name=".Fragment.data.wujiang.Wujiang_xiangxi"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
