@@ -145,7 +145,7 @@
             android:text="登录"
             android:textColor="#fff"
             android:textSize="15sp"
-            android:background="@color/bule"/>
+            android:background="@color/bule" />
 
         <Button
             android:id="@+id/Reg"

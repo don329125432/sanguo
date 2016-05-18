@@ -80,6 +80,7 @@ public class My_Fragment extends Fragment implements View.OnClickListener {
                                           LoginDao loginDao = new LoginDao();
                                           if (loginDao.getContact(username, getContext()) == null) {
                                               Toast.makeText(getContext(), "您并未输入账号密码", Toast.LENGTH_SHORT).show();
+                                              return;
                                           } else {
                                               contact = loginDao.getContact(username, getContext());
 
@@ -96,8 +97,10 @@ public class My_Fragment extends Fragment implements View.OnClickListener {
                                                   editor.commit();
                                                   supportFragmentManager.beginTransaction().replace(R.id.home_fl, new Login_Fragment()).commit();
                                                   Toast.makeText(getContext(), "欢迎您" + contact.getKEY_MOBLIE() + "回来", Toast.LENGTH_SHORT).show();
+                                                  return;
                                               } else {
                                                   Toast.makeText(getContext(), "您的账号密码输入有误", Toast.LENGTH_SHORT).show();
+                                                  return;
                                               }
                                           }
                                       }
