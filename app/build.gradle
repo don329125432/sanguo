@@ -17,6 +17,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+//    sourceSets{
+//        main{
+//            jniLibs.srcDirs = ['libs']
+//        }
+//    }
 }
 
 dependencies {
@@ -29,4 +34,7 @@ dependencies {
     compile files('src/main/libs/gson-2.3.1-sources.jar')
     compile files('src/main/libs/gson-2.3.1.jar')
     compile files('src/main/libs/gson-2.3.1-javadoc.jar')
+    compile files('src/main/libs/AMap_3DMap_V3.3.1_20160419.jar')
+    compile files('src/main/libs/AMap_Location_V2.4.1_20160414.jar')
+    compile files('src/main/libs/AMap_Search_V3.2.1_20160308.jar')
 }

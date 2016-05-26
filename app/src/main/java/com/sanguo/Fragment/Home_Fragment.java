@@ -35,14 +35,14 @@ public class Home_Fragment extends Fragment implements View.OnClickListener {
         super.onViewCreated(view, savedInstanceState);
 
         mBaidutieba = (LinearLayout) view.findViewById(R.id.baidutieba);
-        mZhiyebazhu = (LinearLayout) view.findViewById(R.id.zhiyebazhu);
-        mBazhu = (LinearLayout) view.findViewById(R.id.bazhu);
-        mXiaobazhu = (LinearLayout) view.findViewById(R.id.xiaobazhu);
+//        mZhiyebazhu = (LinearLayout) view.findViewById(R.id.zhiyebazhu);
+//        mBazhu = (LinearLayout) view.findViewById(R.id.bazhu);
+//        mXiaobazhu = (LinearLayout) view.findViewById(R.id.xiaobazhu);
 
         mBaidutieba.setOnClickListener(this);
-        mZhiyebazhu.setOnClickListener(this);
-        mBazhu.setOnClickListener(this);
-        mXiaobazhu.setOnClickListener(this);
+//        mZhiyebazhu.setOnClickListener(this);
+//        mBazhu.setOnClickListener(this);
+//        mXiaobazhu.setOnClickListener(this);
 
     }
 
@@ -54,21 +54,21 @@ public class Home_Fragment extends Fragment implements View.OnClickListener {
                 intent.putExtra("key", "tieba");
                 startActivity(intent);
                 break;
-            case R.id.zhiyebazhu:
-                intent = new Intent(getActivity(),WebView_Activity.class);
-                intent.putExtra("key","zhiyebazhu");
-                startActivity(intent);
-                break;
-            case R.id.bazhu:
-                intent = new Intent(getActivity(),WebView_Activity.class);
-                intent.putExtra("key","bazhu");
-                startActivity(intent);
-                break;
-            case R.id.xiaobazhu:
-                intent = new Intent(getActivity(),WebView_Activity.class);
-                intent.putExtra("key","xiaobazhu");
-                startActivity(intent);
-                break;
+//            case R.id.zhiyebazhu:
+//                intent = new Intent(getActivity(),WebView_Activity.class);
+//                intent.putExtra("key","zhiyebazhu");
+//                startActivity(intent);
+//                break;
+//            case R.id.bazhu:
+//                intent = new Intent(getActivity(),WebView_Activity.class);
+//                intent.putExtra("key","bazhu");
+//                startActivity(intent);
+//                break;
+//            case R.id.xiaobazhu:
+//                intent = new Intent(getActivity(),WebView_Activity.class);
+//                intent.putExtra("key","xiaobazhu");
+//                startActivity(intent);
+//                break;
         }
     }
 }

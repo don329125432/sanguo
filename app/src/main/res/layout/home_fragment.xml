@@ -102,144 +102,144 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="10dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp">-->
 
-                <LinearLayout
-                    android:id="@+id/zhiyebazhu"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:background="@color/bule"
-                    android:gravity="center"
-                    android:orientation="horizontal">
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/zhiyebazhu"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@color/bule"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal">-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="职业吧主"
-                        android:textColor="#fff"
-                        android:textSize="13sp" />
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="职业吧主"-->
+                        <!--android:textColor="#fff"-->
+                        <!--android:textSize="13sp" />-->
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:src="@mipmap/xiliangchaoge" />
+                    <!--<ImageView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:src="@mipmap/xiliangchaoge" />-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="西凉超哥"
-                        android:textColor="#fff"
-                        android:textSize="15sp" />
-                </LinearLayout>
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="西凉超哥"-->
+                        <!--android:textColor="#fff"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</LinearLayout>-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
 
-                    <LinearLayout
-                        android:id="@+id/bazhu"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/bazhu"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="vertical">-->
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="2"
-                            android:src="@mipmap/yishizhijiang" />
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0dp"-->
+                            <!--android:layout_weight="2"-->
+                            <!--android:src="@mipmap/yishizhijiang" />-->
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:orientation="horizontal">-->
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:text="吧主"
-                                android:textColor="#060"
-                                android:textSize="13sp" />
+                            <!--<TextView-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:gravity="center"-->
+                                <!--android:text="吧主"-->
+                                <!--android:textColor="#060"-->
+                                <!--android:textSize="13sp" />-->
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:text="yi世￡智将"
-                                android:textColor="#EEC900"
-                                android:textSize="13sp" />
-                        </LinearLayout>
-                    </LinearLayout>
+                            <!--<TextView-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:gravity="center"-->
+                                <!--android:text="yi世￡智将"-->
+                                <!--android:textColor="#EEC900"-->
+                                <!--android:textSize="13sp" />-->
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
 
-                    <LinearLayout
-                        android:id="@+id/xiaobazhu"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/xiaobazhu"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="vertical">-->
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="2"
-                            android:src="@mipmap/shaobanxia" />
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0dp"-->
+                            <!--android:layout_weight="2"-->
+                            <!--android:src="@mipmap/shaobanxia" />-->
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:orientation="horizontal">-->
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:text="小吧主"
-                                android:textColor="#060"
-                                android:textSize="13sp" />
+                            <!--<TextView-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:gravity="center"-->
+                                <!--android:text="小吧主"-->
+                                <!--android:textColor="#060"-->
+                                <!--android:textSize="13sp" />-->
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:text="邵半瞎17K"
-                                android:textColor="#EEC900"
-                                android:textSize="13sp" />
-                        </LinearLayout>
-                    </LinearLayout>
-                </LinearLayout>
+                            <!--<TextView-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:gravity="center"-->
+                                <!--android:text="邵半瞎17K"-->
+                                <!--android:textColor="#EEC900"-->
+                                <!--android:textSize="13sp" />-->
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="1"
-                    android:background="@color/bule"
-                    android:orientation="horizontal"></LinearLayout>
-            </LinearLayout>
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@color/bule"-->
+                    <!--android:orientation="horizontal"></LinearLayout>-->
+            <!--</LinearLayout>-->
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

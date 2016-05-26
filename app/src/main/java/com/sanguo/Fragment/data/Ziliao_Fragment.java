@@ -1,5 +1,6 @@
 package com.sanguo.Fragment.data;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -21,6 +22,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.ByteArrayInputStream;
+
 /**
  * Created by jinrong on 2016/4/18.
  */
@@ -29,12 +32,14 @@ public class Ziliao_Fragment extends Fragment {
     private TextView mZiliao_mv;
     private ImageView mZilaio_image;
     private static String s = "";
-    private static String image = null;
+    private static String image = "";
+    private Bitmap bitmap = null;
+    private ByteArrayInputStream bais;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.ziliao_fragment, null);
+        View view = inflater.inflate(R.layout.ziliao_fragment,null);
         return view;
     }
 
@@ -74,14 +79,14 @@ public class Ziliao_Fragment extends Fragment {
         requestQueue.add(stringRequest);
     }
 
-    private void Jsonjiexi(String response) {
+    private void Jsonjiexi(String response){
         try {
             JSONArray jsonObjs = new JSONObject(response).getJSONArray("list");
             for (int i = 0; i < jsonObjs.length(); i++) {
                 JSONObject jsonObj = (JSONObject) jsonObjs.get(i);
                 int id = jsonObj.getInt("id");
                 String text = jsonObj.getString("text");
-                image = jsonObj.getString("profile_image");
+
                 s += "id号" + id + "\n" + text + "\n";
             }
             mZiliao_mv.setText(s);
