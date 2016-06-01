@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 import com.sanguo.Fragment.Forum_Fragment;
 import com.sanguo.Fragment.Game_Fragment;
@@ -84,6 +85,19 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.home_my:
                 supportFragmentManager.beginTransaction().replace(R.id.home_fl, new My_Fragment()).commit();
                 break;
+        }
+    }
+
+    long startTime = 0;
+
+    @Override
+    public void onBackPressed() {
+        long currentTime = System.currentTimeMillis();
+        if ((currentTime - startTime) >= 2000) {
+            Toast.makeText(HomeActivity.this, "再按手机就炸了", Toast.LENGTH_SHORT).show();
+            startTime = currentTime;
+        } else {
+            finish();
         }
     }
 }

@@ -54,9 +54,6 @@ public class Wujiang_xiangxi extends Activity {
             mWei_jieshao_zuji.setText(String.valueOf(m.get("zuji")));
 
             mWei_jieshao_jianjie.setText(String.valueOf(m.get("jianjie")));
-
-            //Toast.makeText(this, String.valueOf(m.get(k)), Toast.LENGTH_SHORT).show();
-
         }
     }
 }

@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.sanguo.Contact;
-import com.sanguo.Fragment.my.My_Fragment;
 import com.sanguo.R;
 import com.sanguo.dao.LoginDao;
 
@@ -66,7 +65,7 @@ public class Reg_Fragment extends Fragment implements View.OnClickListener {
                 yanzheng();
                 break;
             case R.id.Reg_fanhui:
-                supportFragmentManager.beginTransaction().replace(R.id.home_fl, new My_Fragment()).commit();
+
                 break;
         }
     }

@@ -4,59 +4,164 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.amap.api.maps.MapView
-        android:id="@+id/map"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/location_errInfo_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|left"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:background="@color/red"
-        android:text="TextView"
-        android:textColor="#666"
-        android:visibility="gone" />
 
-    <RadioGroup
-        android:id="@+id/gps_radio_group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top|right"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:background="#999"
-        android:orientation="horizontal">
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></com.amap.api.maps.MapView>
 
-        <RadioButton
-            android:id="@+id/gps_locate_button"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/location_errInfo_text"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:checked="true"
-            android:text="1"
-            android:textColor="@color/black" />
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#eee"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="TextView"
+            android:textColor="#000"
+            android:visibility="gone" />
 
-        <RadioButton
-            android:id="@+id/gps_follow_button"
-            android:layout_width="0dp"
+        <RadioGroup
+            android:id="@+id/gps_radio_group"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="2"
-            android:textColor="@android:color/black" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#999"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
 
-        <RadioButton
-            android:id="@+id/gps_rotate_button"
-            android:layout_width="0dp"
+            <RadioButton
+                android:id="@+id/gps_locate_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="1"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/gps_follow_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textColor="@android:color/black" />
+
+            <RadioButton
+                android:id="@+id/gps_rotate_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:longClickable="false"
+                android:text="3"
+                android:textColor="@color/black" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/sousuo_button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="3"
-            android:textColor="@color/black"
-            android:longClickable="false" />
+            android:layout_marginLeft="150dp"
+            android:text="搜索"
+            android:textSize="15sp" />
 
-    </RadioGroup>
+        <LinearLayout
+            android:id="@+id/sousuocaidan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:background="#eee"
+            android:orientation="vertical"
+            android:visibility="gone">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/sousuo_chengshi"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:gravity="center"
+                    android:hint="省份"
+                    android:textColor="#000"
+                    android:textColorHint="#888"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/sousuo_diqu"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:gravity="center"
+                    android:hint="城市"
+                    android:textColor="#000"
+                    android:textColorHint="#888"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/sousuo_xiangxi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:hint="街道"
+                android:textColor="#000"
+                android:textColorHint="#888"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/kaishisousuo"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="开始搜索" />
+
+                <Button
+                    android:id="@+id/sousuo_next"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="下一页" />
+
+                <Button
+                    android:id="@+id/sousuo_huanyuan"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="当前位置" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
 </LinearLayout>
