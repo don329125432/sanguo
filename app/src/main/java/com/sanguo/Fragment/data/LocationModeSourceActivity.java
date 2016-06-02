@@ -40,7 +40,6 @@ import com.amap.api.services.poisearch.PoiSearch;
 import com.amap.api.services.poisearch.PoiSearch.OnPoiSearchListener;
 import com.sanguo.R;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,6 +59,7 @@ public class LocationModeSourceActivity extends Activity implements View.OnClick
     private AMapLocationClientOption mLocationOption;
     private RadioGroup mGPSModeGroup;
     private LatLonPoint lp = new LatLonPoint(39.993167, 116.473274);
+    private LatLonPoint dp = new LatLonPoint(39.984947, 116.494689);
 
     private TextView mLocationErrText;
     private String chenshi;
@@ -77,7 +77,6 @@ public class LocationModeSourceActivity extends Activity implements View.OnClick
     private boolean style = false;
     private Button mSousuo_huanyuan;
     private int currentPage = 0;
-    private String keyWord;
     private String keyWord1;
     private String keyWord2;
     private String keyWord3;
@@ -118,17 +117,17 @@ public class LocationModeSourceActivity extends Activity implements View.OnClick
         mKaishisousuo.setOnClickListener(this);
         mSousuo_huanyuan.setOnClickListener(this);
         init();
-        setfromandtoMarker();
+        //       setfromandtoMarker();
     }
 
-    private void setfromandtoMarker() {
-        aMap.addMarker(new MarkerOptions()
-                .position(AMapUtil.convertToLatLng(mStartPoint))
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.start)));
-        aMap.addMarker(new MarkerOptions()
-                .position(AMapUtil.convertToLatLng(mEndPoint))
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.end)));
-    }
+//    private void setfromandtoMarker() {
+//        aMap.addMarker(new MarkerOptions()
+//                .position(AMapUtil.convertToLatLng(lp))
+//                .icon(BitmapDescriptorFactory.fromResource(R.drawable.start)));
+//        aMap.addMarker(new MarkerOptions()
+//                .position(AMapUtil.convertToLatLng(dp))
+//                .icon(BitmapDescriptorFactory.fromResource(R.drawable.end)));
+//    }
 
     private void init() {
         if (aMap == null) {
@@ -144,6 +143,10 @@ public class LocationModeSourceActivity extends Activity implements View.OnClick
                     .position(new LatLng(lp.getLatitude(), lp.getLongitude())));
             locationMarker.showInfoWindow();
 
+//            registerListener();
+//            mRouteSearch = new RouteSearch(this);
+//            mRouteSearch.setRouteSearchListener(this);
+
             setUpMap();
             aMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(lp.getLatitude(), lp.getLongitude()), 14));
         }
@@ -153,6 +156,40 @@ public class LocationModeSourceActivity extends Activity implements View.OnClick
         mLocationErrText = (TextView) findViewById(R.id.location_errInfo_text);
         mLocationErrText.setVisibility(View.GONE);
     }
+
+//    private void registerListener() {
+//        aMap.setOnMapClickListener(LocationModeSourceActivity.this);
+//        aMap.setOnMarkerClickListener(LocationModeSourceActivity.this);
+//        aMap.setOnInfoWindowClickListener(LocationModeSourceActivity.this);
+//        aMap.setInfoWindowAdapter(LocationModeSourceActivity.this);
+//    }
+//
+//    public void onBusClick(View view) {
+//        searchRouteResult(ROUTE_TYPE_BUS, RouteSearch.BusDefault);
+//        mDrive.setImageResource(R.drawable.route_drive_normal);
+//        mBus.setImageResource(R.drawable.route_bus_select);
+//        mWalk.setImageResource(R.drawable.route_walk_normal);
+//        mapView.setVisibility(View.GONE);
+//        mBusResultLayout.setVisibility(View.VISIBLE);
+//    }
+//
+//    public void onDriveClick(View view) {
+//        searchRouteResult(ROUTE_TYPE_DRIVE, RouteSearch.DrivingDefault);
+//        mDrive.setImageResource(R.drawable.route_drive_select);
+//        mBus.setImageResource(R.drawable.route_bus_normal);
+//        mWalk.setImageResource(R.drawable.route_walk_normal);
+//        mapView.setVisibility(View.VISIBLE);
+//        mBusResultLayout.setVisibility(View.GONE);
+//    }
+//
+//    public void onWalkClick(View view) {
+//        searchRouteResult(ROUTE_TYPE_WALK, RouteSearch.WalkDefault);
+//        mDrive.setImageResource(R.drawable.route_drive_normal);
+//        mBus.setImageResource(R.drawable.route_bus_normal);
+//        mWalk.setImageResource(R.drawable.route_walk_select);
+//        mapView.setVisibility(View.VISIBLE);
+//        mBusResultLayout.setVisibility(View.GONE);
+//    }
 
     private void setUpMap() {
         aMap.setLocationSource(this);

@@ -1,32 +1,32 @@
 package com.sanguo.Activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.ImageView;
+import android.os.Handler;
+import android.widget.Toast;
 
 import com.sanguo.R;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import static android.widget.Toast.LENGTH_SHORT;
 
-    private ImageView main_iv_01;
-    private Intent intent;
+public class MainActivity extends Activity{
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+
+    private final long SPLASH_LENGTH = 2000;
+    Handler handler = new Handler();
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        handler.postDelayed(new Runnable() {  //使用handler的postDelayed实现延时跳转
 
-        main_iv_01 = (ImageView) findViewById(R.id.main_iv_01);
-        main_iv_01.setOnClickListener(this);
+            public void run() {
+                Toast.makeText(getBaseContext(),"我要让陈永发怀上杨凡的孩子", LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }, SPLASH_LENGTH);//2秒后跳转至应用主界面
 
-    }
-
-    @Override
-    public void onClick(View v) {
-        intent = new Intent(MainActivity.this, HomeActivity.class);
-        startActivity(intent);
-        finish();
     }
 }
