@@ -19,7 +19,6 @@ public class MainActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         handler.postDelayed(new Runnable() {  //使用handler的postDelayed实现延时跳转
-
             public void run() {
                 Toast.makeText(getBaseContext(),"我们要让陈永发怀上杨凡的孩子", LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
